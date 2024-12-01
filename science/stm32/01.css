@@ -105,6 +105,12 @@ header{
 }
 
 details{
+    .open{
+        display: inline;
+    }
+    .close{
+        display: none;
+    }
     summary{
         color: #01858f;
         text-decoration: double;
@@ -127,6 +133,15 @@ details{
     }
     a:hover{
         color: #444444;
+    }
+}
+
+details[open]{
+    .open{
+        display: none;
+    }
+    .close{
+        display: inline;
     }
 }
 
