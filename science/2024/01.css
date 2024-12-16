@@ -225,3 +225,13 @@ footer{
         text-decoration-line: underline;
     }
 }
+
+img{
+    height: 7.5em;
+    padding-left: 1em;
+}
+
+.warn:hover{
+    color: #ff000099;
+    text-decoration-color: #ff000099;
+}
