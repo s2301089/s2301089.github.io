@@ -85,13 +85,13 @@ header{
         white-space: pre-warp;
     }
     a{
-        text-decoration: dashed;
+        text-decoration: underline;
         text-decoration-line: underline;
         color: #777777;
         font-size: 0.75em;
     }
     a:hover{
-        text-decoration: underline;
+        text-decoration: dashed;
         text-decoration-line: underline;
     }
     .top{
@@ -101,6 +101,9 @@ header{
     .top:hover{
         color: #01858f;
         text-decoration: underline;
+    }
+    .warn{
+        color: #ff0000;
     }
 }
 

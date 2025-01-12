@@ -24,6 +24,7 @@
                     <li><a href="#uartrev">シリアル通信：UART(受信)</a></li>
                     <li><a href="#gpiowrt">ディジタル入出力：GPIO(出力、入力、反転)</a></li>
                     <li><a href="#pwm">PWM出力：Timer</a></li>
+                    <li><a href="#gebin">binファイルの生成</a></li>
                 </details>
             </div>
 
@@ -137,6 +138,19 @@ int _write(int file,char *ptr,int len){
                 <a href="#" class="top">Topへ戻る</a>
             </div>
 
+            <div class="contents" id="gebin">
+                <h3>binファイルの生成</h3>
+                <div>
+                    <p>Keil Studio等でコンパイル時に生成されるようなbinファイルをcubeIDEでも生成する。</p>
+                    <p>プロジェクトを右クリック - プロパティー - C/C++ ビルド - 設定 - ツール設定</p>
+                    <p>MCU/MPU Post build outputs - Convert to binary file(-O binary)の項目にチェックを入れ、適用して閉じる。</p>
+                    <p>実行するとbinファイルが「プロジェクト名/Debug」に生成される。</p>
+                    <p class="warn">binファイルは実行時やデバッグ時に上書きされる。</p>
+                    <a href="https://yukblog.net/stm32cubeide-hex/" target="_blank" rel="noopener noreferrer">STM32CubeIDEでHEXファイルを作成する方法</a>
+                </div>
+                <a href="#" class="top">Topへ戻る</a>
+            </div>
+            
             <!-- <div class="contents" id="">
                 <h3></h3>
                 <div>
