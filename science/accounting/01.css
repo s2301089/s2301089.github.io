@@ -105,6 +105,13 @@ header{
     .warn{
         color: #ff0000;
     }
+    ul{
+        padding-left: 1.5em;
+    }
+    li{
+        list-style-type: circle;
+        color: #777777;
+    }
 }
 
 details{
