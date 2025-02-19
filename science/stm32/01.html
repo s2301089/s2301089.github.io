@@ -75,7 +75,7 @@ int _write(int file,char *ptr,int len){
 /* USER CODE END 2 */
 
 /* USER CODE BEGIN 3 */
-    if(HAL_UART_Receive(&huart1,&revdata,1,10) == HAL_OK){
+    if(HAL_UART_Receive(&huart1,&revdata,1,10) == OK){
         /* [処理] */
         HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,1);
     }
@@ -126,12 +126,11 @@ int _write(int file,char *ptr,int len){
                     <h4>main.c</h4>
                     <pre><code>
 /* USER CODE BEGIN WHILE */
-while(1){
     HAL_TIM_PWM_Start(&htim2,TIM_CHANNEL_1);
 /* USER CODE END WHILE */
 
 /* USER CODE BEGIN 3 */
-    __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_1,100);
+    __HAL_TIM_SET_COMPARE(&htim,TIM_CHANNEL_1,100);
 /* USER CODE END 3 */
                     </code></pre>
                     <a href="https://moons.link/post-632/" target="_blank" rel="noopener noreferrer">STM32 HALを使ってPWM出力してみる-moon's STM32づくし</a>
